@@ -54,7 +54,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Instructions />
           </Suspense>
         } />
-        <Route path="referencie" element={
+        <Route path="references" element={
           <Suspense fallback={<Loading />}>
             <References />
           </Suspense>

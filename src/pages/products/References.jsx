@@ -1,6 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 
-const Referencie = () => {
+const References = () => {
   const { product } = useOutletContext();
 
   return (
@@ -13,4 +13,4 @@ const Referencie = () => {
   );
 };
 
-export default Referencie;
+export default References;

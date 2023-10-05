@@ -40,13 +40,13 @@ const Navigation = () => {
             Produkty a služby
           </NavLink>
           <NavLink
-            to={{ pathname: "instructiones", hash: "#instructiones" }}
+            to={{ pathname: "instructions", hash: "#instructions" }}
             style={({ isActive }) => (isActive ? activeStyle : null)}
           >
             Ako postupovať?
           </NavLink>
           <NavLink
-            to={"referencie"}
+            to={"references"}
             style={({ isActive }) => (isActive ? activeStyle : null)}
           >
             Referencie
@@ -84,15 +84,16 @@ const Navigation = () => {
         <Link to="/products#products" onClick={closeNav}>
           Produkty a služby
         </Link>
+        <NavLink to="/instructions" onClick={closeNav}>
+          Ako postupovať?
+        </NavLink>
         <NavLink to="/about#about" onClick={closeNav}>
           O nás
         </NavLink>
-        <NavLink to="/referencie#referencie" onClick={closeNav}>
+        <NavLink to="/references#references" onClick={closeNav}>
           Referencie
         </NavLink>
-        <NavLink to="/reviews#reviews" onClick={closeNav}>
-          Recenzie
-        </NavLink>
+        
         <NavLink to="/contact" onClick={closeNav}>
           Kontakt
         </NavLink>
