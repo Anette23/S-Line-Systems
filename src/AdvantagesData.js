@@ -1,0 +1,148 @@
+const AdvantagesData = [
+  {
+    id: "podlahove-kurenie",
+    name: "Podlahové kúrenie",
+    adv1: `<span>Komfort:</span> Podlahové kúrenie poskytuje rovnomerné teplo po celej ploche miestnosti, čo znamená, že sa teplo rovnomerne rozloží a nevznikajú žiadne tepelné zóny. To zaručuje pohodlie a rovnomernú teplotu v miestnosti.`,
+    adv2: `<span>Energetická úspornosť:</span> Podlahové kúrenie má oveľa nižšie prevádzkové náklady ako tradičné radiátory, pretože pracuje na nižších teplotách. To znamená, že sa spotrebuje menej energie na vykurovanie miestnosti.`,
+    adv3: `<span>Bezprašnosť:</span> Podlahové kúrenie pracuje bez použitia ventilátorov, čo znamená, že nevytvára prach a iné alergény v miestnosti. To je veľmi výhodné pre ľudí s alergiami alebo respiračnými problémami.`,
+    adv4:`<span>Estetika:</span> Podlahové kúrenie sa nachádza pod podlahou a nezaberie žiadne miesto v miestnosti, čo znamená, že je diskrétne a esteticky príjemné.`,
+    adv5:`<span>Jednoduchá údržba:</span> Podlahové kúrenie nevyžaduje takmer žiadnu údržbu a čistenie, čo znamená, že je veľmi jednoduché udržiavať v dobrom stave.`
+  },
+  {
+    id: "podlahove-kurenie-suchy-system",
+    name: "Podlahové kúrenie - Suchý systém",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "tepelne-cerpadlo",
+    name: "Tepelné čerpadlo",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "solarne-panely",
+    name: "Solárne panely",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "stenove-vykurovanie",
+    name: "Stenové vykurovanie",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "kotol-pelety",
+    name: "Kotol na pelety",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "radiatory",
+    name: "Radiátory",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "podlahove-konvektory",
+    name: "Podlahové konvektory",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "fotovoltaika",
+    name: "Fotovoltaika",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "klimatizacia",
+    name: "Klimatizácia",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "stropne-chladenie",
+    name: "Stropné chladenie",
+    image: "../src/assets/img/produkty/podlahoveKonvektory.webp",
+    description:
+      "Celkovo možno povedať, že podlahové kúrenie je vynikajúcou voľbou pre tých, ktorí hľadajú efektívne, energeticky úsporné a pohodlné kúrenie pre svoj domov alebo kanceláriu.",
+  },
+
+  {
+    id: "rekuperacia",
+    name: "Rekuperácia",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "kondenzacne-kotle",
+    name: "Kondenzačné kotle",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "ocelove-medene-nerezove-rury-a-tvarovky",
+    name: "Oceľové, medené, nerezové rúry a tvarovky",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "zasobniky-vody-a-akumulacne-nadoby",
+    name: "Zásobníky vody a akumulačné nádoby",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+
+  {
+    id: "regulacie",
+    name: "Regulácie",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "smart-system",
+    name: "Smart systém",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "projekcia",
+    name: "Projekcia",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "montaz",
+    name: "Montáž",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+  {
+    id: "servis",
+    name: "Servis",
+    adv1: "regerre",
+    adv2: "grertre",
+    adv3: "vyhody same vyyyhody",
+  },
+];
+
+export default AdvantagesData;
