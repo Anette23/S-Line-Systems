@@ -6,13 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/products/Products";
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
-import ProductDetail from "./pages/products/ProductDetail";
 
-// const ProductDetail = lazy(() => import("./pages/products/ProductDetail"));
-<LazyLoadComponent>
-      <ProductDetail />
-    </LazyLoadComponent>
+const ProductDetail = lazy(() => import("./pages/products/ProductDetail"));
 const Vyhody = lazy(() => import("./pages/products/Vyhody"));
 const Info = lazy(() => import("./pages/products/Info"));
 const Instructions = lazy(() => import("./pages/Instructions"));

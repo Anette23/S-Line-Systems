@@ -2,7 +2,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 import heroImage from "../../assets/img/banner.webp";
 import { HiChevronDoubleDown } from "react-icons/hi2";
 import SecondaryButton from "../buttons/SecondaryButton";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 
 const HeroSection2 = () => {
@@ -42,7 +42,7 @@ const HeroSection2 = () => {
             </aside>
           </article>
           <article className=" mt-10 lg:mt-0 lg:grid lg:items-center">
-          <LazyLoadImage
+          <img
               className="w-full rounded-xl"
               src={heroImage}
               width={600} height={400}
