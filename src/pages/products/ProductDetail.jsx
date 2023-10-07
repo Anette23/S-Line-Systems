@@ -29,7 +29,7 @@ const ProductDetail = () => {
   }
   return (
     <>
-      <section className="py-32  ">
+      <section className="pt-24 md:pt-32 lg:pt-28  ">
         <ProductContext.Provider value={product}>
           <BackButton />
 

@@ -3,11 +3,11 @@ const Reviews = () => {
     <section id="reviews" className="pt-24 md:pt-32 lg:pt-28">
       <h1>Recenzie</h1>
       {/* Testimonials */}
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card */}
-          <div className="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700">
+          <div className="flex flex-col rounded-xl bg-primary border-red-700">
             <div className="flex-auto p-4 md:p-6">
               <svg
                 className="w-20 h-auto sm:w-24 text-gray-700 dark:text-gray-300"
@@ -62,7 +62,7 @@ const Reviews = () => {
                   fill="currentColor"
                 />
               </svg>
-              <p className="mt-3 sm:mt-6 text-base text-gray-800 md:text-xl dark:text-white">
+              <p className="mt-3 sm:mt-6 text-base md:text-xl text-red-700">
                 absolutely floored by the level of care and attention to detail
                 the team at HS have put into this theme and for one can
                 guarantee that I will be a return customer.
