@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rosario:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Rosario:ital,wght@0,500;0,700;1,500&family=Rubik:wght@300&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -36,60 +36,34 @@ button {
   font-family: inherit;
 }
 
-html {font-size: 100%;}
+:root {
+  /* COLORS */
+  --background-color: hsl(0, 0%, 0%);
+  --text-color: hsl(246, 36%, 95%);
+
+  /* FONTS */
+  --inter-font: "Inter", sans-serif;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
 
 body {
-  background-color: hsl(0, 0%, 0%);
-  color: hsl(246, 36%, 95%);
-
-  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--inter-font);
 }
 
-:root {
-  /* FONTS */
-  --heading-font: "Fira Sans", sans-serif;
-  --inter-font: "Inter", sans-serif;
-  --alegreya-font: "Alegreya SC", serif;
-}
-
-
-
-
-/* @keyframes reveal {
-  from { opacity: 0; clip-path: inset(0% 60% 0% 50%); }
-  to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
-}
-
-img {
-  animation: auto linear reveal both;
-  animation-timeline: view();
-  animation-range: entry 25% cover 50%;
-} */
-
-.colorEffect {
-  background: linear-gradient(120deg, #91043a, #33b0f3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-section {
+section:not(.hero) {
   padding: clamp(1rem, 4vw, 2.5rem);
-}
-
-footer {
-  background: url(../src//assets/img/bg/bg3.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 section:not(#about, #products) {
   background: url(../src/assets/img/bg/bg5.webp);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-html {
-  overflow-x: hidden;
 }
 
 .svg-icon {
@@ -108,28 +82,37 @@ html {
   stroke-width: 1;
 }
 
-p {
-  font-family: var(--inter-font);
-  font-size: clamp(1rem, 4vw, 1.1rem);
-  font-weight: 400;
-}
-
-
 h1,
-h2,span {
+h2,
+.heading-span {
   text-wrap: balance;
   font-family: "Rosario", sans-serif;
-  font-weight: 700;
-  letter-spacing: normal;
+  font-weight: 500;
 }
 
 h1 {
-  font-size: clamp(1.2rem, 4vw, 3rem);
-  text-transform: capitalize;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.heading-span {
+  font-size: 3rem;
+  font-weight:700;
+}
+
+
+.colorEffect {
+  background: linear-gradient(120deg, #91043a, #33b0f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
   font-size: clamp(0.8rem, 4vw, 1rem);
+}
+
+span {
+  color: hsl(201, 89%, 58%);
+  line-height: 1.8;
 }
 
 .heroHeading {
@@ -150,53 +133,84 @@ h2 {
   box-shadow: 0 20px 80px -10px #91043a;
 }
 
+/* IMG ANIMATION */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0% 60% 0% 50%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+.animate-img {
+  animation: auto linear reveal both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 50%;
+}
+
 .about-list {
   line-height: 1.6;
 }
 
-.about-list li::marker, .advantages-list li::marker {
+.about-list li::marker,
+.advantages-list li::marker {
   content: "✔";
   color: hsl(201, 89%, 58%);
   font-size: 1.3rem;
 }
 
-.about-list li, .advantages-list li {
+.about-list li,
+.advantages-list li {
   padding-left: 1rem;
 }
 
-span {
-  color:hsl(201, 89%, 58%);
-  line-height: 1.8;
-}
-
+/* LOADER */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loader {
-  border: 16px solid #f3f3f3; 
-  border-top: 16px solid #3498db; 
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   animation: spin 2s linear infinite;
 }
 
+/* DROPDOWN MENU */
 .dropdown-menu {
   max-height: calc(100vh - 40px);
   overflow-y: scroll;
 }
 
 .dropdown-menu::-webkit-scrollbar {
-  width: 10px;  /* šírka scrollbaru */
+  width: 10px; /* šírka scrollbaru */
 }
 
 .dropdown-menu::-webkit-scrollbar-thumb {
-  background-color: darkgrey;  /* farba "držadla" scrollbaru */
-  border-radius: 5px;  /* zaoblenie "držadla" */
+  background-color: darkgrey; /* farba "držadla" scrollbaru */
+  border-radius: 5px; /* zaoblenie "držadla" */
 }
 
 .dropdown-menu::-webkit-scrollbar-track {
-  background-color: lightgrey;  /* farba pozadia scrollbaru */
+  background-color: lightgrey; /* farba pozadia scrollbaru */
 }
+
+footer {
+  background: url(../src//assets/img/bg/bg3.webp);
+  background: #450523;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Footer backgrounds: 
+#130613 #1F0617 #2C051B #38051F #450523 #510526 #5E052A #6A052E #770432 #830436 */

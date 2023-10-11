@@ -16,6 +16,7 @@ export default {
         primary: "hsl(337, 95%, 29%)",
         secondary: "hsl(212, 100%, 26%)",
         accent: "hsl(201, 89%, 58%)",
+        cardBackround: 'rgba(24, 7, 24, 0.997)'
       },
     },
   },

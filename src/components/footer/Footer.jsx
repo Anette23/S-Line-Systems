@@ -1,9 +1,8 @@
 import logo from "../../assets/img/sline_logo.webp";
 import { Link}  from "react-router-dom";
-
 const Footer = () => {
   return (
-    <footer className="bg-gray-900">
+    <footer className="">
   <div className="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
     {/* Grid */}
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">

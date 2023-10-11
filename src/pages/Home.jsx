@@ -1,5 +1,5 @@
 import AboutPreview from "../components/AboutPreview";
-import HeroSection2 from "../components/heroSection/HeroSection2";
+import HeroSection3 from "../components/heroSection/HeroSection3";
 import ReviewsPreview from "../components/ReviewsPreview";
 import Products from "./products/Products";
 
@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <main className="pt-24 md:pt-32 lg:pt-28 max-container">
 
-        <HeroSection2 />
+        <HeroSection3 />
         <Products />
         <AboutPreview />
         <ReviewsPreview />

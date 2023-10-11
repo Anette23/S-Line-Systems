@@ -1,7 +1,7 @@
 import { Outlet, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import productDetailData from "../../ProductsDetailData";
-import BackButton from "../../components/buttons/BackButton";
+// import BackButton from "../../components/buttons/BackButton";
 import { createContext, useContext } from "react";
 import ProductNavigation from "../../components/ProductNavigation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -31,11 +31,11 @@ const ProductDetail = () => {
     <>
       <section className="pt-24 md:pt-32 lg:pt-28  ">
         <ProductContext.Provider value={product}>
-          <BackButton />
+          {/* <BackButton /> */}
 
-          <div className="my-8 lg:grid lg:grid-cols-2">
+          <div className="my-8 md:grid md:grid-cols-2 md:gap-6">
           <LazyLoadImage
-              src={product.image} width={600} height={400} 
+              src={product.image} width={400} height={400} 
               className="rounded-lg"
               alt={`image of ${product.name}`}
               loading="lazy"
@@ -43,7 +43,7 @@ const ProductDetail = () => {
 
             <div>
               <h2 className="text-accent text-2xl my-4">{product.name}</h2>
-              <p className="mb-4">{product.description}</p>
+              <p className="mb-4 max-w-md">{product.description}</p>
               <ProductNavigation productId={id} />
             </div>
           </div>
